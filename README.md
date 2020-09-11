@@ -1,1 +1,1 @@
-### Here you will find all the deployment guides for the projects 🚀
+### Here you will find all the guides for the projects 🚀
