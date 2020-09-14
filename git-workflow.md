@@ -30,7 +30,7 @@ Then we have to pull in the changes from the GitHub repo to our local branch:
 
 We change to the master branch:
     
-    git checkout master branch
+    git checkout master
 
 We pull in the changes from the GitHub repo:
     
