@@ -26,7 +26,7 @@ https://www.mongodb.com/atlas-signup-from-mlab
 ### **Sign Up & Create a Free Cluster** 
 
 1. Sign Up for Mongo Atlas - enter the email, password, first name, last name
-2. Select  >>>  **Starter Clusters**
+2. Select  >>>  **Shared Clusters**
 3. In the drop-down **Cloud Provider & Region** select: 
    -  Europe Region with "**FREE TIER AVAILABLE**" flag
 4. In the drop-down "**Cluster Tier**" make sure to select:
