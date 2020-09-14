@@ -30,7 +30,7 @@ https://www.mongodb.com/atlas-signup-from-mlab
 3. In the drop-down **Cloud Provider & Region** select: 
    -  Europe Region with "**FREE TIER AVAILABLE**" flag
 4. In the drop-down "**Cluster Tier**" make sure to select:
-   - **M2 Sandbox**
+   - **M0 Sandbox**
 5. Click the button **Create Cluster**
 
 
