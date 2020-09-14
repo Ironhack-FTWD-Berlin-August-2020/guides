@@ -72,8 +72,7 @@ https://www.mongodb.com/atlas-signup-from-mlab
 
    - **Copy** the **Connection String Only**
 
-     
-6. Update the config vars in heroku and the connection string in app.js
+### Add the Environment variables to heroku and update      
 
 You need to make sure that you have all the variables that are in your .env are also saved in Heroku, in the _Config Vars_ section of the _Settings_ tab.
 
@@ -83,9 +82,11 @@ When you are running your app in development it is localhost, in production it s
 
 You can see there is already a MONGODB_URI variable configured, so just add this to your mongoose connection link wherever you need it in your project:
 
-The MONGODB_URI variable on heroku will look something like this: 
+The MONGODB_URI variable on heroku will look something like this:
+
+You will have to replace the database name and the password
 ```
-mongodb://heroku_s5t34q0n:1hspkmkdnoddpj4tchb01na9ai@ds0345969.mlab.com:29969/heroku_s5t34q0n 
+mongodb+srv://fullstacksteve:<password>@ironhack.5tfbhz.mongodb.net/<dbname>?retryWrites=true&w=majority
 ```
 
 And in your project make this change to the connection in app.js:
