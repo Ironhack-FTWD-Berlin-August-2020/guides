@@ -38,11 +38,7 @@ https://www.mongodb.com/atlas-signup-from-mlab
 <br>
 
 
-
-
-
 ### Setup MongoDB Atlas Cluster:
-
 
 
 1. In the sidebar select **SECURITY  ->  Database Access**
