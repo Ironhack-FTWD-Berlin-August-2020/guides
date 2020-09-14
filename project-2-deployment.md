@@ -204,7 +204,7 @@ git push heroku master
 #### To fetch your app’s most recent logs, use the `heroku logs` command:
 
 ```bash
- heroku logs
+heroku logs
 ```
 
 The `logs` command retrieves 100 log lines by default. 
@@ -238,7 +238,7 @@ We can open the terminal instance on the Heroku container ([dyno](https://www.he
 heroku run bash
 
 # We may then run the seed file
-~$~$ node bin/seed.js
+node bin/seed.js
 
 ```
 
