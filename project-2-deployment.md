@@ -72,7 +72,7 @@ https://www.mongodb.com/atlas-signup-from-mlab
 
    - **Copy** the **Connection String Only**
 
-### Add the Environment variables to heroku and update      
+### Add the Environment variables to heroku and update the monogoose connection in app.js  
 
 You need to make sure that you have all the variables that are in your .env are also saved in Heroku, in the _Config Vars_ section of the _Settings_ tab.
 
@@ -133,9 +133,7 @@ Start by copying the MONGODB_URI config variable from the *Settings* tab and the
 ## Install Heroku CLI
 
 
-
 #### [LINK: Docs - Install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#npm)
-
 
 
 ### If unable to install the CLI via the Standalone installation (using a file) :
@@ -151,7 +149,6 @@ heroku --version
 
 heroku login
 ```
-
 
 
 <br>
@@ -222,8 +219,10 @@ heroku logs -n 200
 
 #### Real-time tail displays recent logs and leaves the session open for real-time logs to stream in. 
 
+The name of your app can be found on heroku under settings
+
 ```bash
-heroku logs -t
+heroku logs --tail --app <name of your app>
 
 ```
 
