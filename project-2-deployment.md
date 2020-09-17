@@ -49,6 +49,7 @@ https://www.mongodb.com/atlas-signup-from-mlab
 
    - Select **Read and write to any database** - User Privileges
    - Set the **Username** and **Password**
+   🚨🚨🚨 Note down the password and the username somewhere 🚨🚨🚨
    - Create New User
 
    <br>
@@ -78,21 +79,23 @@ You need to make sure that you have all the variables that are in your .env are 
 
 So click on the _Settings_ tab and then on the _RevealConfigVars_ tab. There you enter the configuration variables.
 
-When you are running your app in development it is localhost, in production it should be the address that you can get by clicking on the _Settings_ tab and then _Reveal Config Vars_.
+Add the connection string from Atlas that you copied above - MONGODB_URI should be the key and the value is the connection string
 
-You can see there is already a MONGODB_URI variable configured, so just add this to your mongoose connection link wherever you need it in your project:
 
-The MONGODB_URI variable on heroku will look something like this:
+The connection string should look something like this 
 
-You will have to replace the database name and the password
+You will have to replace the database name and the password (the database name you can choose freely - the password you copied from atlas)
 ```
 mongodb+srv://fullstacksteve:<password>@ironhack.5tfbhz.mongodb.net/<dbname>?retryWrites=true&w=majority
 ```
 
-And in your project make this change to the connection in app.js:
+Now we need to update the mongoose connection in app.js:
 
-Commit the changes and push to the master branch, this should deploy again.
+Because when you are running your app in development it should connect to the local database, in production it should be the address that you can get by clicking on the _Settings_ tab and then _Reveal Config Vars_.
 
+So in your project make this change to the connection in app.js:
+
+(without the ... of course...)
 ```js
 // app.js
 //
@@ -101,8 +104,9 @@ mongoose
 //
 ```
 
-(without the ... of course...)
+Now if the env variable is set we use it otherwise we just use the local database
 
+Commit the changes and push to the master branch
 
 <br>
 
