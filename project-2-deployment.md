@@ -84,7 +84,7 @@ Add the connection string from Atlas that you copied above - MONGODB_URI should 
 
 The connection string should look something like this 
 
-You will have to replace the database name and the password (the database name you can choose freely - the password you copied from atlas)
+You will have to replace the database name and the password, the brackets just indicate that this is a variable, (the database name you can choose freely - the password you copied from atlas)
 ```
 mongodb+srv://fullstacksteve:<password>@ironhack.5tfbhz.mongodb.net/<dbname>?retryWrites=true&w=majority
 ```
