@@ -81,7 +81,6 @@ So click on the _Settings_ tab and then on the _RevealConfigVars_ tab. There you
 
 Add the connection string from Atlas that you copied above - MONGODB_URI should be the key and the value is the connection string
 
-
 The connection string should look something like this 
 
 You will have to replace the database name and the password, the brackets just indicate that this is a variable, (the database name you can choose freely - the password you copied from atlas)
