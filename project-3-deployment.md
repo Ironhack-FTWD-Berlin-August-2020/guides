@@ -2,6 +2,9 @@
 
 ## Follow the steps from the guide for project 2 - you also need to connect the GitHub Repo, create the MongoAtlas Cluster and add all the environment variables on Heroku, including the MongoDB connection string.
 
+## To create a new Cluster on MongoAtlas you have to create a new project. 
+- https://docs.atlas.mongodb.com/tutorial/manage-projects/#create-a-project
+
 ## React deploy
 
 As for the first time, you should initialize your git repo so that your server code is at the root level.
